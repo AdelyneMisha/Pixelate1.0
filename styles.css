@@ -1,0 +1,31 @@
+#mainhead {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  color: rgb(9, 9, 74);
+  font-size: 7rem;
+}
+
+p{
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+canvas{
+  image-rendering: pixelated;
+  transform: scale(5);
+  transform-origin: top left;
+}
+
+#toolbox{
+  
+  display: flex;
+  border: 1px solid black;
+}
+
+#toolbox > *{
+  margin: 0.5rem;
+ 
+  align-self: left;
+}

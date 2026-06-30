@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pixelate</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <!--Main heading pixelate ###try to animate-->
+      <h1 id="mainhead">Pixelate</h1>
+      <section id="about">
+         <!--About section-->
+         <p>Heyy!!!<br/>
+            Ever wanted to make art from a picture? Be it a cross-stitch pattern, a pixel art, a diamond painting kit or anything that your crazy artistic mind can imagine.
+            With Pixelate you can turn any image into a pixelated version of itself. But it doesn't end there, you can then download a pattern with a limited color palette of your choice and make your own unique art piece.
+            <br/>All you need to do is upload an image you want to pixelate, play around with the settings to resize or adjust the pixels and colour palette and then simply choose your preferreed pattern format.
+            Thats it! Download your pattern when you get your desired result and start working on your art!
+         </p>
+      </section>
+      <!--pixelate tool section-->
+      <section id="tool">
+         <p>Add image down below</p>
+         <div id="img-upload">
+            <label for ="image_uploads">Choose an image:</label>
+            <input type="file" id="image_uploads" name="image_uploads" accept="image">
+         </div>
+         <br/>
+
+
+         <!--toolbox main div section-->
+         <div id="toolbox">     
+            <div class="preview" id="preview"></div>
+            <!--<button id="pixelate">Pixelate</button>-->
+            <div id="canvasbox">
+               <canvas id="canvas"></canvas>
+            </div>
+         </div>
+         
+
+         <!--toolbox settings section
+         <div id="settings">
+            <input type="range" id="pixelSize" min="1" max="50" value="10">
+            <label for="pixelSize">Pixel Size</label>
+         </div>-->
+
+
+      </section>
+      <script src="script.js"></script>
+   </body>
+</html>
